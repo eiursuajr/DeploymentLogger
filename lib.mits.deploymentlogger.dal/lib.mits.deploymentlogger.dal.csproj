@@ -1,0 +1,92 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02B482EF-F33D-4EAE-94FC-7AD331577349}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DL_DAL</RootNamespace>
+    <AssemblyName>DL_DAL</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\ActivityLog.cs" />
+    <Compile Include="Client\ActivityLogView.cs" />
+    <Compile Include="Client\ActivityType.cs" />
+    <Compile Include="Client\AddressBook.cs" />
+    <Compile Include="Client\AddressBookView.cs" />
+    <Compile Include="Client\DefaultNotification.cs" />
+    <Compile Include="Client\ImpactLevel.cs" />
+    <Compile Include="Client\LogEntriesView.cs" />
+    <Compile Include="Client\LogEntry.cs" />
+    <Compile Include="Client\LogEntryStatus.cs" />
+    <Compile Include="Client\LogEntryStatusNotificationType.cs" />
+    <Compile Include="Client\LogEntryType.cs" />
+    <Compile Include="Client\Notification.cs" />
+    <Compile Include="Client\NotificationLog.cs" />
+    <Compile Include="Client\NotificationType.cs" />
+    <Compile Include="Client\Organization.cs" />
+    <Compile Include="Client\OrganizationUser.cs" />
+    <Compile Include="Client\ProductionLogEntries.cs" />
+    <Compile Include="Client\ProductionUpdates.cs" />
+    <Compile Include="Client\Project.cs" />
+    <Compile Include="Client\ProjectCategory.cs" />
+    <Compile Include="Client\ProjectGroup.cs" />
+    <Compile Include="Client\ProjectNotification.cs" />
+    <Compile Include="Client\ProjectNotificationExclusion.cs" />
+    <Compile Include="Client\ProjectSection.cs" />
+    <Compile Include="Client\ProjectStatus.cs" />
+    <Compile Include="Client\ProjectUser.cs" />
+    <Compile Include="Client\ProjectView.cs" />
+    <Compile Include="Client\Role.cs" />
+    <Compile Include="Client\User.cs" />
+    <Compile Include="Master\Database.cs" />
+    <Compile Include="Master\Organization.cs" />
+    <Compile Include="Master\OrganizationUser.cs" />
+    <Compile Include="Master\OrganizationView.cs" />
+    <Compile Include="Master\Role.cs" />
+    <Compile Include="Master\RoleAction.cs" />
+    <Compile Include="Master\Server.cs" />
+    <Compile Include="Master\User.cs" />
+    <Compile Include="Master\UserRole.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Client\Update.cs" />
+    <Compile Include="Client\UpdateGroup.cs" />
+    <Compile Include="Client\UpdateStatus.cs" />
+    <Compile Include="Client\UpdateStatusNotificationType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\lib.mits.deploymentlogger.dOOdads\lib.mits.deploymentlogger.dOOdads.csproj">
+      <Project>{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}</Project>
+      <Name>lib.mits.deploymentlogger.dOOdads</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

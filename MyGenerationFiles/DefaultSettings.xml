@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefaultSettings Version="1.1.5.0" FirstTime="false">
+  <Setting Name="DbDriver" value="SQL" />
+  <Setting Name="ConnectionString" value="Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;User ID=sa;Initial Catalog=DeploymentLogger;Data Source=andrews-mobile" />
+  <Setting Name="DbTargetMappingFile" value="C:\Program Files\MyGeneration\Settings\DbTargets.xml" />
+  <Setting Name="LanguageMappingFile" value="C:\Program Files\MyGeneration\Settings\Languages.xml" />
+  <Setting Name="UserMetaDataFileName" value="C:\Program Files\MyGeneration\Settings\UserMetaData.xml" />
+  <Setting Name="Language" value="C#" />
+  <Setting Name="DbTarget" value="SqlClient" />
+  <Setting Name="EnableLineNumbering" value="False" />
+  <Setting Name="EnableClipboard" value="True" />
+  <Setting Name="Tabs" value="4" />
+  <Setting Name="ScriptTimeout" value="-1" />
+  <Setting Name="CheckForNewBuild" value="True" />
+  <Setting Name="CompactMemoryOnStartup" value="True" />
+  <Setting Name="DefaultTemplateDirectory" value="C:\Program Files\MyGeneration\Templates\" />
+  <Setting Name="DefaultOutputDirectory" value="C:\Program Files\MyGeneration\GeneratedCode\" />
+  <Setting Name="DomainOverride" value="True" />
+  <Setting Name="UseProxyServer" value="False" />
+  <Setting Name="ProxyServerUri" value="" />
+  <Setting Name="ProxyAuthUsername" value="" />
+  <Setting Name="ProxyAuthPassword" value="" />
+  <Setting Name="ProxyAuthDomain" value="" />
+  <Setting Name="SQL" value="Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;User ID=sa;Initial Catalog=DeploymentLogger;Data Source=andrews-mobile" />
+  <SavedSettings name="DL_client" driver="SQL" connstr="Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;User ID=sa;Initial Catalog=DeploymentLogger;Data Source=andrews-mobile" dbtargetpath="C:\Program Files\MyGeneration\Settings\DbTargets.xml" languagepath="C:\Program Files\MyGeneration\Settings\Languages.xml" usermetapath="C:\Program Files\MyGeneration\Settings\UserMetaData.xml" language="C#" dbtarget="SqlClient" />
+  <Setting Name="WindowState" value="Maximized" />
+  <Setting Name="WindowPosTop" value="-4" />
+  <Setting Name="WindowPosLeft" value="-4" />
+  <Setting Name="WindowPosWidth" value="1288" />
+  <Setting Name="WindowPosHeight" value="808" />
+</DefaultSettings>

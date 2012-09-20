@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home" url="~/Default.aspx" description="Site Home">
+    <siteMapNode title="Dictionaries"  description="Different Dictionaries">
+      <siteMapNode title="Notification Types" url="~/NotificationTypes.aspx" description="Notification Types"/>
+    </siteMapNode>
+    <siteMapNode url="~/AddressBook.aspx" title="Contacts"  description="Contacts" />
+    <siteMapNode title="Manage"  description="Management tools">
+      <siteMapNode title="Role Rights" url="~/RoleActions.aspx" description="Different Role Rights"/>
+      <siteMapNode title="Activity Log" url="~/ActivityLog.aspx" description="View activity log"/>
+      <siteMapNode title="Users" url="~/UserList.aspx" description="User list"/>
+      <siteMapNode title="Organizations" url="~/Organizations.aspx" description="Organization list"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

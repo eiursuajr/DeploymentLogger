@@ -1,0 +1,41 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "DL_DB_MASTER"
+   MSDTVersion = "80"
+   DefDBRef = "largo.mits_deploymentlogger_master_beta.dbo"
+   SccProjectName = "SAK"
+   SccLocalPath = "SAK"
+   SccAuxPath = "SAK"
+   SccProvider = "SAK"
+   Begin Folder = "Change Scripts"
+      Script = "MASTER_20060116_01.sql"
+      Script = "MASTER_20060126_01.sql"
+      Script = "MASTER_20060311_01.sql"
+      Script = "MASTER_20060312_01.sql"
+      Script = "MASTER_20060423_01.sql"
+   End
+   Begin Folder = "Create Scripts"
+      Script = "Action.sql"
+      Script = "Database.sql"
+      Script = "loadroleactionbyroleid.sql"
+      Script = "MicrosoftSQL_ALL.SQL"
+      Script = "Object.sql"
+      Script = "Organization.sql"
+      Script = "OrganizationUser.sql"
+      Script = "OrganizationView.sql"
+      Script = "Role.sql"
+      Script = "RoleAction.sql"
+      Script = "RoleActionStoredProcedures.sql"
+      Script = "Server.sql"
+      Script = "User.sql"
+      Script = "UserRole.sql"
+   End
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "largo.mits_deploymentlogger_master_beta.dbo"
+         ConnectStr = "Data Source=micajah.sql1;Initial Catalog=mits_deploymentlogger_master_beta;Persist Security Info=True;User ID=andrey.magazinov"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 5
+      End
+   End
+   Begin Folder = "Queries"
+   End
+End

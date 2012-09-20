@@ -1,0 +1,135 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="default.master.cs" Inherits="_default" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Deployment Logger</title>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <script language="javascript" type="text/javascript" src="scripts.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server" style="margin: 0; height: 100%">
+        <table cellpadding="0" cellspacing="0" width="100%" style="height: 100%">
+            <tr style="height: 100%">
+                <td style="height: 100%">
+                    <table cellpadding="0" cellspacing="0" width="100%" style="height: 100%">
+                        <tr valign="top">
+                            <td>
+                                <table cellpadding="0" cellspacing="0" width="100%">
+                                    <tr class="header" valign="top">
+                                        <td style="white-space: nowrap">
+                                            <asp:Image ID="imgLogo" runat="server" ImageUrl="~/images/logo.JPG" AlternateText="Deployment Logger Logo" />
+                                        </td>
+                                        <td style="width: 100%; padding: 3px 20px 0 20px;" align="right">
+                                            <br />
+                                            <asp:Label ID="loggedInAsCaption" runat="server" meta:resourcekey="loggedInAsCaptionResource1">Logged in as:</asp:Label>
+                                            <asp:LoginName ID="loginName" runat="server" meta:resourcekey="loginNameResource1" />
+                                            <br />
+                                            <a href="ActiveOrganization.aspx" title="Click to choose organization">Organization</a>
+                                            <asp:Label ID="lblOrganizationName" runat="server"></asp:Label>
+                                            <br />
+                                            <asp:HyperLink ID="ProfileTopLink" runat="server" NavigateUrl="~/UserProfile.aspx"
+                                                Text="My Profile" Visible="false"></asp:HyperLink>&nbsp;&nbsp;<a href="Logoff.aspx">Logoff</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <asp:LoginView ID="LoginView2" runat="server">
+                                    <RoleGroups>
+                                        <asp:RoleGroup Roles="Project Manager">
+                                            <ContentTemplate>
+                                                <hr />
+                                                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2"
+                                                    StaticSubMenuIndent="10px" DynamicEnableDefaultPopOutImage="False" Orientation="Horizontal"
+                                                    StaticEnableDefaultPopOutImage="False">
+                                                    <StaticMenuStyle CssClass="menu" />
+                                                    <StaticSelectedStyle CssClass="menuSelectedItem" />
+                                                    <StaticMenuItemStyle CssClass="menuItem" />
+                                                    <DynamicHoverStyle CssClass="menuPopupItem" />
+                                                    <DynamicMenuStyle CssClass="menuPopup" />
+                                                    <DynamicMenuItemStyle CssClass="menuPopupItem" Font-Strikeout="False" />
+                                                    <StaticHoverStyle CssClass="menuItemHover" />
+                                                    <StaticItemTemplate>
+                                                        <%# Eval("Text") %>
+                                                    </StaticItemTemplate>
+                                                </asp:Menu>
+                                                <hr />
+                                            </ContentTemplate>
+                                        </asp:RoleGroup>
+                                        <asp:RoleGroup Roles="Developer">
+                                            <ContentTemplate>
+                                                <hr />
+                                                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource2" DynamicHorizontalOffset="2"
+                                                    StaticSubMenuIndent="10px" DynamicEnableDefaultPopOutImage="False" Orientation="Horizontal"
+                                                    StaticEnableDefaultPopOutImage="False">
+                                                    <StaticMenuStyle CssClass="menu" />
+                                                    <StaticSelectedStyle CssClass="menuSelectedItem" />
+                                                    <StaticMenuItemStyle CssClass="menuItem" />
+                                                    <DynamicHoverStyle CssClass="menuPopupItem" />
+                                                    <DynamicMenuStyle CssClass="menuPopup" />
+                                                    <DynamicMenuItemStyle CssClass="menuPopupItem" Font-Strikeout="False" />
+                                                    <StaticHoverStyle CssClass="menuItemHover" />
+                                                    <StaticItemTemplate>
+                                                        <%# Eval("Text") %>
+                                                    </StaticItemTemplate>
+                                                </asp:Menu>
+                                                <hr />
+                                            </ContentTemplate>
+                                        </asp:RoleGroup>
+                                        <asp:RoleGroup Roles="System Administrator">
+                                            <ContentTemplate>
+                                                <hr />
+                                                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource3" DynamicHorizontalOffset="2"
+                                                    StaticSubMenuIndent="10px" DynamicEnableDefaultPopOutImage="False" Orientation="Horizontal"
+                                                    StaticEnableDefaultPopOutImage="False">
+                                                    <StaticMenuStyle CssClass="menu" />
+                                                    <StaticSelectedStyle CssClass="menuSelectedItem" />
+                                                    <StaticMenuItemStyle CssClass="menuItem" />
+                                                    <DynamicHoverStyle CssClass="menuPopupItem" />
+                                                    <DynamicMenuStyle CssClass="menuPopup" />
+                                                    <DynamicMenuItemStyle CssClass="menuPopupItem" Font-Strikeout="False" />
+                                                    <StaticHoverStyle CssClass="menuItemHover" />
+                                                    <StaticItemTemplate>
+                                                        <%# Eval("Text") %>
+                                                    </StaticItemTemplate>
+                                                </asp:Menu>
+                                                <hr />
+                                            </ContentTemplate>
+                                        </asp:RoleGroup>
+                                    </RoleGroups>
+                                </asp:LoginView>
+                                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False"
+                                    SiteMapProvider="ManagerSiteMapProvider" />
+                                <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" ShowStartingNode="False"
+                                    SiteMapProvider="DeveloperSiteMapProvider" />
+                                <asp:SiteMapDataSource ID="SiteMapDataSource3" runat="server" ShowStartingNode="False"
+                                    SiteMapProvider="AdministratorSiteMapProvider" />
+                            </td>
+                        </tr>
+                        <tr style="height: 100%">
+                            <td valign="top" style="padding: 0 7px 7px 7px; height: 100%">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="footer">
+                        <asp:HyperLink ID="ProfileBottomLink" runat="server" NavigateUrl="~/UserProfile.aspx"
+                            Visible="false">MY PROFILE</asp:HyperLink>&nbsp;&nbsp;<asp:HyperLink runat="server" ID="hlLogoff"
+                                NavigateUrl="~/Logoff.aspx">LOGOFF</asp:HyperLink>
+                        <br />
+                        Copyright © 2005-<%=DateTime.Today.Year %>
+                        Micajah. All rights reserved.
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home" url="~/Default.aspx" description="Site Home">
+    <siteMapNode title="Home" description="Projects" url="~/Projects.aspx"/>
+    <siteMapNode title="Admin"  description="Management tools">
+      <siteMapNode url="~/AddressBook.aspx" title="Contacts"  description="Contacts" />
+      <siteMapNode title="Notification Types" url="~/NotificationTypes.aspx" description="Notification Types"/>
+      <siteMapNode title="Activity Log" url="~/ActivityLog.aspx" description="View activity log"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,127 @@
+/*
+
+   27 марта 2006 г. 16:53:29
+
+   User: 
+
+   Server: AMD64\SQL2000
+
+   Database: mits_deploymentlogger_client1_beta
+
+   Application: MS SQLEM - Data Tools
+
+*/
+
+
+
+BEGIN TRANSACTION
+SET QUOTED_IDENTIFIER ON
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+SET ARITHABORT ON
+SET NUMERIC_ROUNDABORT OFF
+SET CONCAT_NULL_YIELDS_NULL ON
+SET ANSI_NULLS ON
+SET ANSI_PADDING ON
+SET ANSI_WARNINGS ON
+COMMIT
+BEGIN TRANSACTION
+CREATE TABLE dbo.[Action]
+	(
+	ActionID int NOT NULL IDENTITY (1, 1),
+	ParentID int NULL,
+	Name varchar(50) NOT NULL,
+	URL varchar(1000) NULL,
+	ControlID varchar(1000) NULL
+	)  ON [PRIMARY]
+GO
+ALTER TABLE dbo.[Action] ADD CONSTRAINT
+	PK_Action PRIMARY KEY CLUSTERED 
+	(
+	ActionID
+	) ON [PRIMARY]
+
+GO
+ALTER TABLE dbo.[Action] ADD CONSTRAINT
+	FK_Action_Action FOREIGN KEY
+	(
+	ParentID
+	) REFERENCES dbo.[Action]
+	(
+	ActionID
+	)
+GO
+COMMIT
+BEGIN TRANSACTION
+COMMIT
+BEGIN TRANSACTION
+CREATE TABLE dbo.RoleAction
+	(
+	RoleID int NOT NULL,
+	ActionID int NOT NULL
+	)  ON [PRIMARY]
+GO
+ALTER TABLE dbo.RoleAction ADD CONSTRAINT
+	PK_RoleAction PRIMARY KEY CLUSTERED 
+	(
+	RoleID,
+	ActionID
+	) ON [PRIMARY]
+
+GO
+ALTER TABLE dbo.RoleAction ADD CONSTRAINT
+	FK_RoleAction_Action FOREIGN KEY
+	(
+	ActionID
+	) REFERENCES dbo.[Action]
+	(
+	ActionID
+	) ON DELETE CASCADE
+	
+GO
+ALTER TABLE dbo.RoleAction ADD CONSTRAINT
+	FK_RoleAction_Role FOREIGN KEY
+	(
+	RoleID
+	) REFERENCES dbo.Role
+	(
+	RoleID
+	) ON DELETE CASCADE
+	
+GO
+COMMIT
+
+SET QUOTED_IDENTIFIER ON 
+GO
+SET ANSI_NULLS ON 
+GO
+
+CREATE  PROCEDURE [dbo].[LoadRoleActionsByRoleID]
+(
+	@RoleID int
+)
+AS
+BEGIN
+	SET NOCOUNT ON
+	DECLARE @Err int
+
+	SELECT 
+		a.ActionID, 
+		a.ParentID, 
+		a.Name, 
+		a.URL, 
+		a.ControlID, 
+		ISNULL(SIGN(ra.RoleID), 0) AS IsPermitted
+	FROM            dbo.[Action] a 
+	LEFT OUTER JOIN dbo.RoleAction ra ON  ra.ActionID = a.ActionID
+					  AND ra.RoleID   = @RoleID
+
+	SET @Err = @@Error
+
+	RETURN @Err
+END
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+

@@ -1,0 +1,50 @@
+.report_body
+{
+	background-color: White;
+	color: #000;
+	font-family: Verdana, Arial;
+	font-size: 70%;
+	margin-left:20px;
+}
+
+.project_name
+{
+	font-weight: bold;
+	font-size: 100%;
+	display: inline;
+}
+
+.log_entry_section, log_entry_name, log_entry_description
+{
+    font-size:smaller;
+}
+
+.report_header
+{
+    font-size:larger;
+    font-style:normal;
+    letter-spacing: 1px;    
+}
+
+img
+{
+	border: 0;
+}
+
+hr
+{
+	color: #808080;
+	height: 1px;
+	border: 0;
+	background-color: #808080;
+}
+
+.footer
+{
+	border-top: solid 1px #808080;
+	padding: 7px 0 7px 0;
+	background-image: url(images/background_footer.jpg);
+	background-repeat: repeat-x;
+	color: Black;
+	text-align: center;
+}

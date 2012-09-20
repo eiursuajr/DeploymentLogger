@@ -1,0 +1,196 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "svc.mits.deploymentlogger", "svc.mits.deploymentlogger\svc.mits.deploymentlogger.csproj", "{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\...\web.mits.deploymentlogger\", "web.mits.deploymentlogger", "{7A5861EF-2AA9-4E74-90F1-58E29D003173}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		Debug.AspNetCompiler.VirtualPath = "/web.mits.deploymentlogger"
+		Debug.AspNetCompiler.PhysicalPath = "..\web.mits.deploymentlogger\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\web.mits.deploymentlogger\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/web.mits.deploymentlogger"
+		Release.AspNetCompiler.PhysicalPath = "..\web.mits.deploymentlogger\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\web.mits.deploymentlogger\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52754"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web.mits.deploymentlogger.SiteMaps", "web.mits.deploymentlogger.SiteMaps\web.mits.deploymentlogger.SiteMaps.csproj", "{AC1110F4-AF63-4BEE-9938-CA2100912A9E}"
+EndProject
+Project("{4F174C21-8C12-11D0-8340-0000F80270F8}") = "db.mits.deploymentlogger.master", "db.mits.deploymentlogger.master\db.mits.deploymentlogger.master.dbp", "{D63BFFF9-34C3-4B1F-A621-1F5FC2FAE915}"
+EndProject
+Project("{4F174C21-8C12-11D0-8340-0000F80270F8}") = "db.mits.deploymentlogger.client", "db.mits.deploymentlogger.client\db.mits.deploymentlogger.client.dbp", "{7CA1F44B-8763-462B-9720-4FB533456678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "db.mits.deploymentlogger.main", "db.mits.deploymentlogger.main\db.mits.deploymentlogger.main.csproj", "{D8A96DE7-5964-45D2-A431-31863DDA504F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib.mits.deploymentlogger.dal", "lib.mits.deploymentlogger.dal\lib.mits.deploymentlogger.dal.csproj", "{02B482EF-F33D-4EAE-94FC-7AD331577349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib.mits.deploymentlogger.dOOdads", "lib.mits.deploymentlogger.dOOdads\lib.mits.deploymentlogger.dOOdads.csproj", "{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "svc.mits.deploymentlogger.setup", "svc.mits.deploymentlogger.setup\DL_SVC_SETUP.vdproj", "{8C5FC199-2EAE-4844-8B18-9A13FA773A33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micajah.Common", "Bin\Micajah.Common\Micajah.Common.csproj", "{5A647C73-157E-40A5-BF4F-27A1AADFAD60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{19020AC9-BB64-432D-AFBC-574D71A162DA}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\DL_SiteMaps.dll = Bin\DL_SiteMaps.dll
+		Bin\Micajah.Common.MasterPage.dll = Bin\Micajah.Common.MasterPage.dll
+		Bin\nsoftware.RSSTools.dll = Bin\nsoftware.RSSTools.dll
+		Bin\RadCalendar.Net2.dll = Bin\RadCalendar.Net2.dll
+		Bin\RadEditor.Net2.dll = Bin\RadEditor.Net2.dll
+		Bin\RadSpell.NET2.dll = Bin\RadSpell.NET2.dll
+		Bin\RadTreeView.dll = Bin\RadTreeView.dll
+		Bin\RadWindow.Net2.dll = Bin\RadWindow.Net2.dll
+		Bin\skmRss.dll = Bin\skmRss.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://elektra-v03:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = db.mits.deploymentlogger.master\\db.mits.deploymentlogger.master.dbp
+		SccProjectName1 = db.mits.deploymentlogger.master
+		SccLocalPath1 = db.mits.deploymentlogger.master
+		SccProjectUniqueName2 = db.mits.deploymentlogger.main\\db.mits.deploymentlogger.main.csproj
+		SccProjectName2 = db.mits.deploymentlogger.main
+		SccLocalPath2 = db.mits.deploymentlogger.main
+		SccProjectUniqueName3 = lib.mits.deploymentlogger.dal\\lib.mits.deploymentlogger.dal.csproj
+		SccProjectName3 = lib.mits.deploymentlogger.dal
+		SccLocalPath3 = lib.mits.deploymentlogger.dal
+		SccWebProject4 = true
+		SccProjectUniqueName4 = web.mits.deploymentlogger
+		SccProjectName4 = web.mits.deploymentlogger
+		SccLocalPath4 = web.mits.deploymentlogger
+		SccProjectEnlistmentChoice4 = 2
+		SccProjectUniqueName5 = db.mits.deploymentlogger.client\\db.mits.deploymentlogger.client.dbp
+		SccProjectName5 = db.mits.deploymentlogger.client
+		SccLocalPath5 = db.mits.deploymentlogger.client
+		SccProjectUniqueName6 = lib.mits.deploymentlogger.dOOdads\\lib.mits.deploymentlogger.dOOdads.csproj
+		SccProjectName6 = lib.mits.deploymentlogger.dOOdads
+		SccLocalPath6 = lib.mits.deploymentlogger.dOOdads
+		SccProjectUniqueName7 = svc.mits.deploymentlogger.setup\\DL_SVC_SETUP.vdproj
+		SccProjectName7 = svc.mits.deploymentlogger.setup
+		SccLocalPath7 = svc.mits.deploymentlogger.setup
+		SccProjectUniqueName8 = Bin\\Micajah.Common\\Micajah.Common.csproj
+		SccProjectName8 = Bin/Micajah.Common
+		SccLocalPath8 = Bin\\Micajah.Common
+		SccProjectUniqueName9 = svc.mits.deploymentlogger\\svc.mits.deploymentlogger.csproj
+		SccProjectName9 = ../svc.mits.deploymentlogger
+		SccLocalPath9 = svc.mits.deploymentlogger
+		SccProjectUniqueName10 = web.mits.deploymentlogger.SiteMaps\\web.mits.deploymentlogger.SiteMaps.csproj
+		SccProjectName10 = ../web.mits.deploymentlogger.SiteMaps
+		SccLocalPath10 = web.mits.deploymentlogger.SiteMaps
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}.Release|.NET.ActiveCfg = Release|Any CPU
+		{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C27FDC28-9FDD-40B2-BE11-BA70B67B83D1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7A5861EF-2AA9-4E74-90F1-58E29D003173}.Debug|.NET.ActiveCfg = Debug|.NET
+		{7A5861EF-2AA9-4E74-90F1-58E29D003173}.Debug|.NET.Build.0 = Debug|.NET
+		{7A5861EF-2AA9-4E74-90F1-58E29D003173}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{7A5861EF-2AA9-4E74-90F1-58E29D003173}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{7A5861EF-2AA9-4E74-90F1-58E29D003173}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{7A5861EF-2AA9-4E74-90F1-58E29D003173}.Release|.NET.ActiveCfg = Debug|.NET
+		{7A5861EF-2AA9-4E74-90F1-58E29D003173}.Release|.NET.Build.0 = Debug|.NET
+		{7A5861EF-2AA9-4E74-90F1-58E29D003173}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{7A5861EF-2AA9-4E74-90F1-58E29D003173}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{7A5861EF-2AA9-4E74-90F1-58E29D003173}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{AC1110F4-AF63-4BEE-9938-CA2100912A9E}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{AC1110F4-AF63-4BEE-9938-CA2100912A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC1110F4-AF63-4BEE-9938-CA2100912A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC1110F4-AF63-4BEE-9938-CA2100912A9E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AC1110F4-AF63-4BEE-9938-CA2100912A9E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AC1110F4-AF63-4BEE-9938-CA2100912A9E}.Release|.NET.ActiveCfg = Release|Any CPU
+		{AC1110F4-AF63-4BEE-9938-CA2100912A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC1110F4-AF63-4BEE-9938-CA2100912A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC1110F4-AF63-4BEE-9938-CA2100912A9E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AC1110F4-AF63-4BEE-9938-CA2100912A9E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Release|.NET.ActiveCfg = Release|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D8A96DE7-5964-45D2-A431-31863DDA504F}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
+		{02B482EF-F33D-4EAE-94FC-7AD331577349}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{02B482EF-F33D-4EAE-94FC-7AD331577349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B482EF-F33D-4EAE-94FC-7AD331577349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B482EF-F33D-4EAE-94FC-7AD331577349}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{02B482EF-F33D-4EAE-94FC-7AD331577349}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{02B482EF-F33D-4EAE-94FC-7AD331577349}.Release|.NET.ActiveCfg = Release|Any CPU
+		{02B482EF-F33D-4EAE-94FC-7AD331577349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B482EF-F33D-4EAE-94FC-7AD331577349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B482EF-F33D-4EAE-94FC-7AD331577349}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{02B482EF-F33D-4EAE-94FC-7AD331577349}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Release|.NET.ActiveCfg = Release|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Debug|.NET.ActiveCfg = Debug
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Debug|.NET.Build.0 = Debug
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Debug|Any CPU.ActiveCfg = Debug
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Debug|Any CPU.Build.0 = Debug
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Debug|Mixed Platforms.Build.0 = Debug
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Release|.NET.ActiveCfg = Release
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Release|.NET.Build.0 = Release
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Release|Any CPU.ActiveCfg = Release
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Release|Any CPU.Build.0 = Release
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Release|Mixed Platforms.ActiveCfg = Release
+		{8C5FC199-2EAE-4844-8B18-9A13FA773A33}.Release|Mixed Platforms.Build.0 = Release
+		{5A647C73-157E-40A5-BF4F-27A1AADFAD60}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{5A647C73-157E-40A5-BF4F-27A1AADFAD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A647C73-157E-40A5-BF4F-27A1AADFAD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A647C73-157E-40A5-BF4F-27A1AADFAD60}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5A647C73-157E-40A5-BF4F-27A1AADFAD60}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5A647C73-157E-40A5-BF4F-27A1AADFAD60}.Release|.NET.ActiveCfg = Release|Any CPU
+		{5A647C73-157E-40A5-BF4F-27A1AADFAD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A647C73-157E-40A5-BF4F-27A1AADFAD60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A647C73-157E-40A5-BF4F-27A1AADFAD60}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5A647C73-157E-40A5-BF4F-27A1AADFAD60}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

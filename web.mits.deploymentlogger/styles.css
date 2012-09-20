@@ -1,0 +1,280 @@
+body, th, td, .footer, textarea, input, select, span.field
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+body
+{
+	background-color: #E0F4FE;
+	margin: 2px;
+	margin: 0;
+	padding: 0;
+}
+
+a
+{
+	color: #006AEA;
+}
+
+.report_body
+{
+	background-color: white;
+	color: #000;
+	font-family: Verdana, Arial;
+	font-size: 70%;
+}
+
+.report_header_cell
+{
+	font-weight: bold;
+	font-size: 100%;
+	display: inline;
+}
+
+.report_entry_cell
+{
+	font-size: smaller;
+}
+
+.report_header
+{
+	font-size: larger;
+	font-style: normal;
+	letter-spacing: 1px;
+}
+
+img
+{
+	border: 0;
+}
+
+.header
+{
+	background: url(images/background_main.jpg) repeat-x left top;
+	vertical-align: top;
+}
+
+.subscribe-header
+{
+	background: url(images/background_main.jpg) repeat-x left top;
+	vertical-align: top;
+}
+
+hr
+{
+	color: #808080;
+	height: 1px;
+	border: 0;
+	background-color: #808080;
+}
+
+.footer
+{
+	border-top: solid 1px #808080;
+	padding: 7px 0 7px 0;
+	background-image: url(images/background_footer.jpg);
+	background-repeat: repeat-x;
+	color: Black;
+	text-align: center;
+}
+
+.footer a
+{
+	padding: 0 7px 0 7px;
+}
+
+table.formatting
+{
+	padding: 0;
+	margin: 0;
+}
+
+tr.tableheader th, tr.tablefooter, tr.tablepager, tr.tablepager a, tr.tablepager span
+{
+	background-color: #284775;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: left;
+}
+
+tr.tablepager
+{
+	text-align: left;
+}
+
+tr.tablepager span
+{
+	color: #91A193;
+}
+
+tr.tablerow td, tr.tablerow a
+{
+	background-color: #F7F6F3;
+	color: #000000;
+}
+
+tr.tablerowalt td, tr.tablerowalt a
+{
+	background-color: #ffffff;
+	color: #284775;
+}
+
+a.newitem, tr.commandrow td a
+{
+	color: #284775;
+	font-weight: bold;
+}
+
+legend
+{
+	color: #006AEA;
+	padding-bottom: 7px;
+}
+
+fieldset
+{
+	border: solid 1px #808080;
+	padding: 0 7px 7px 7px;
+}
+
+.pagecaption, caption
+{
+	color: #006AEA;
+	font-weight: bold;
+	text-align: left;
+	font-size: 14px;
+	padding: 7px 0 7px 0;
+}
+
+.fieldname, tr.fieldname td
+{
+	color: #284775;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 7px;
+}
+
+tr.fieldname td, td.fieldname
+{
+	width: auto;
+}
+
+tr td.field
+{
+	text-align: left;
+	font-weight: normal;
+	width: auto;
+}
+
+tr.commandrow td
+{
+	padding: 7px 0 0 127px;
+}
+
+.error
+{
+	font-size: 20px;
+	text-align: left;
+	color: Red;
+	font-weight: bold;
+}
+
+/* Box styles */
+
+TD.boxTop
+{
+	background-image: url(~/images/boxTop.gif);
+	background-repeat: repeat-x;
+	height: 10px;
+}
+
+TD.boxLeft
+{
+	background-image: url(~/images/boxLeft.gif);
+	width: 10px;
+}
+
+TD.boxMain
+{
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+TD.boxRight
+{
+	background-image: url(~/images/boxRight.gif);
+	width: 10px;
+}
+
+TD.boxBottom
+{
+	background-image: url(~/images/boxBottom.gif);
+	background-repeat: repeat-x;
+	height: 10px;
+}
+
+/*begin creating the tabs */
+.menu
+{
+	margin-left: 28px;
+	background: url(images/tab_bg.gif) repeat-x;
+	font-size: 10px;
+	font-weight: bold;
+}
+/* set tab1 as top level container table, then target TDs inside*/
+.menuItem td
+{
+	color: #FFFFFF;
+	height: 24px;
+	background: url(images/tab_dim.gif) no-repeat;
+	width: 100px;
+	text-align: center;
+}
+/* make current tab gray,set the background-color also in case images are not on*/
+.menuSelectedItem td
+{
+	background: url(images/tab.gif) no-repeat #919191;
+}
+/* make link and visited the same look,set the background-color also in case images are not on*/
+.menuItem a:link, .menuItem a:visited, .menuPopupItem a:link, .menuPopupItem a:visited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/* make hover by changing vertical position of background to -22px (the tab_dim2.gif is 44px high) */
+.menuItem a:hover
+{
+	text-decoration: underline;
+}
+
+/* make drop down menu container style */
+.menuPopup
+{
+	background: url(images/background_drop_menu.jpg) repeat #8C9FB4;
+	border: 1px solid #666666;
+	border-bottom: none;
+	color: #ffffff;
+}
+
+/* make drop down menu item style */
+.menuPopupItem
+{
+	color: #ffffff;
+	border-bottom: 1px solid #666666;
+	padding: 3px;
+}
+
+/********Subscribe page**************/
+
+.subs_header
+{
+	font-size: 20px;
+}
+
+.second_header
+{
+	font-size: 15px;
+}
+/************************************/
